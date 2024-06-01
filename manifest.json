@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "applications": {
         "gecko": {
-            "id": "reply-all-button"
+            "id": "replyAllButton"
         }
     },
     "name": "Reply All Button",
