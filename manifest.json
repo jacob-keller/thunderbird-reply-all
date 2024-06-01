@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "applications": {
         "gecko": {
-            "id": "replyAllButton"
+            "id": "platinummyr.replyAllButton@addons.thunderbird.net"
         }
     },
     "name": "Reply All Button",
