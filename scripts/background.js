@@ -10,13 +10,9 @@ async function replyAllAction (tab, info) {
 
     let forcePlainText = await loadOption("alwaysPlainText");
 
-    if (forcePlainText || info.modifiers.includes("Shift")) {
-        var details = {
-            isPlainText: true,
-        };
-    } else {
-        var details = {};
-    }
+    const details = {};
+    if (forcePlainText || info.modifiers.includes("Shift"))
+        details.isPlainText = true;
 
     browser.compose.beginReply(message.id, "replyToAll", details);
 }
