@@ -1,4 +1,5 @@
 /* SPDX-License-Identifier: MIT */
+// vim: et:ts=4:sw=4
 
 import * as prefs from "./save-restore.js";
 
