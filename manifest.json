@@ -6,7 +6,7 @@
         }
     },
     "name": "Reply All Button",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Message action button to Reply All. Can replace Smart Reply to effectively disable Reply List.",
     "author": "Jacob Keller",
     "homepage_url": "https://github.com/jacob-keller/thunderbird-reply-all",
