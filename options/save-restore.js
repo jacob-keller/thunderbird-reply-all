@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: MIT */
 // vim: et:ts=4:sw=4
 
-import { DefaultOptions, OptionsList } from "./defaults.js";
+import { DefaultOptions } from "./defaults.js";
 
 const AddonName = browser.runtime.getManifest().name;
 
@@ -38,7 +38,9 @@ async function restoreAllOptions () {
 }
 
 function resetAllOptions () {
-    return browser.storage.local.remove(OptionsList).then(() => {
+    const options = Options.keys(DefaultOptions);
+
+    return browser.storage.local.remove(options).then(() => {
         restoreAllOptions();
     });
 }

@@ -5,6 +5,4 @@ const DefaultOptions = {
     alwaysPlainText: false,
 };
 
-const OptionsList = Object.keys(DefaultOptions);
-
-export { DefaultOptions, OptionsList };
+export { DefaultOptions };
