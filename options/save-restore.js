@@ -10,13 +10,9 @@ const checkOptionMap = {
 };
 
 function loadOption (id) {
-    return browser.storage.local.get(id).then((res) => {
-        if (res[id] !== undefined) {
-            return res[id];
-        } else {
-            return DefaultOptions[id];
-        }
-    }, `[${AddonName}] Failed to load value of ${id} option`);
+    return browser.storage.local.get({
+        [id]: DefaultOptions[id]
+    }).then(res => res[id], `[${AddonName}] Failed to load value of ${id} option`);
 }
 
 function saveCheckOptions (e) {
